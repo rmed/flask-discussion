@@ -1,0 +1,3 @@
+Flask>=1.1.1
+Pallets-Sphinx-Themes>=1.2.2
+Sphinx>=2.2.1
