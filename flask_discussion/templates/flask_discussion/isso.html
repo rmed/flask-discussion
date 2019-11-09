@@ -40,6 +40,7 @@ as part of  the `render_comments()` macro.
             {% if config.DISCUSSION_ISSO_REPLY_TO_SELF is defined %}data-isso-reply-to-self="{{ config.DISCUSSION_ISSO_REPLY_TO_SELF | string | lower }}"{% endif %}
             {% if config.DISCUSSION_ISSO_REQUIRE_AUTHOR is defined %}data-isso-require-author="{{ config.DISCUSSION_ISSO_REQUIRE_AUTHOR | string | lower }}"{% endif %}
             {% if config.DISCUSSION_ISSO_REQUIRE_EMAIL is defined %}data-isso-require-email="{{ config.DISCUSSION_ISSO_REQUIRE_EMAIL | string | lower }}"{% endif %}
+            {% if config.DISCUSSION_ISSO_REPLY_NOTIFICATIONS is defined %}data-isso-reply-notifications="{{ config.DISCUSSION_ISSO_REPLY_NOTIFICATIONS | string | lower }}"{% endif %}
             {% if config.DISCUSSION_ISSO_MAX_COMMENTS_TOP %}data-isso-max-comments-top="{{ config.DISCUSSION_ISSO_MAX_COMMENTS_TOP }}"{% endif %}
             {% if config.DISCUSSION_ISSO_MAX_COMMENTS_NESTED %}data-isso-max-comments-nested="{{ config.DISCUSSION_ISSO_MAX_COMMENTS_NESTED }}"{% endif %}
             {% if config.DISCUSSION_ISSO_REVEAL_ON_CLICK %}data-isso-reveal-on-click="{{ config.DISCUSSION_ISSO_REVEAL_ON_CLICK }}"{% endif %}
@@ -68,8 +69,8 @@ as part of  the `render_comments()` macro.
 
 {# Render Isso comment count.
 
-This **cannot be included at the same time as the full Isso client**. Make sure to include `#isso_thread` to the
-`href` tag in the link for which to show comment count.
+This **cannot be included at the same time as the full Isso client**. Make sure to include `#isso_thread` in the
+`href` attribute of the link for which to show the comment count.
 #}
 {% macro render_comment_count() -%}
 {% if config.DISCUSSION_ISSO_URL %}

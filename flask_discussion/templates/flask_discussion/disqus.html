@@ -58,8 +58,8 @@ SOFTWARE.
 
 {# Render Disqus comment count.
 
-This should be called before the closing </body> tag. Make sure to include `#disqus_thread` to the
-`href` tag in the link for which to show comment count.
+This should be called before the closing </body> tag. Make sure to include `#disqus_thread` in the
+`href` attribute of the link for which to show the comment count.
 #}
 {% macro render_comment_count() -%}
 {% if config.DISCUSSION_DISQUS_SHORTNAME %}
