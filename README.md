@@ -1,5 +1,8 @@
 # Flask-Discussion
 
+[![Documentation Status](https://readthedocs.org/projects/flask-discussion/badge/?version=latest)](https://flask-discussion.readthedocs.io/en/latest/?badge=latest)
+
+
 Flask-Discussion is an extension for
 [Flask](https://palletsprojects.com/p/flask/) that adds support for several
 discussion/comment systems to your application.
@@ -71,4 +74,6 @@ macros directly. For instance, for Disqus:
 </html>
 ```
 
-Check the documentation to see configuration variables for each system.
+## Documentation
+
+Documentation is available at <https://flask-discussion.readthedocs.io>.
