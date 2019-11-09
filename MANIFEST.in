@@ -1,4 +1,6 @@
 recursive-include flask_discussion/templates *
+graft docs
+prune docs/_build
 
 recursive-exclude * __pycache__
 recursive-exclude * *.swp
