@@ -11,6 +11,7 @@ Supported comment systems:
 
 - [Disqus](https://disqus.com)
 - [Isso](https://github.com/posativ/isso/)
+- [Remark42](https://github.com/umputun/remark42)
 
 
 ## Quickstart
