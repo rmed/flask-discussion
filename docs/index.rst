@@ -16,6 +16,16 @@ discussion/comment systems to your application. Simply use the provided
 .. _Flask: https://palletsprojects.com/p/flask/
 
 
+Supported Systems
+-----------------
+
+The following comment systems are supported:
+
+- Disqus
+- Isso (0.12.2)
+- Remark42 (1.5.0)
+
+
 User Guide
 ----------
 

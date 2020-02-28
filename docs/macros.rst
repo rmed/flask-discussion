@@ -173,3 +173,75 @@ Example usage::
             {{ isso.render_comment_count() }}
         </body>
     </html>
+
+
+----
+
+
+Remark42 macros
+---------------
+
+These macros integrate `Remark42`_ comments into an application.
+
+.. _Remark42: https://github.com/umputun/remark42
+
+Available in the ``flask_discussion/remark42.html`` template.
+
+
+.. function:: remark42.render_comments(url, title="", components=["embed"])
+
+    Render Remark42 comments.
+
+    :param url: URL of the page
+    :param title: Optional title of the page (will default to browser window
+        title)
+    :param components: Specifies which components to load. Available components
+        are:
+
+        - "embed": basic component widget
+        - "last-comments": last comments widget
+        - "counter": counter widget
+
+Example usage::
+
+    {% import "flask_discussion/remark42.html" as remark42 %}
+
+    <html>
+        <body>
+            {{ remark42.render_comments("http://my-page.com", "Page title") }}
+        </body>
+    </html>
+
+
+.. function:: remark42.render_last_comments(max_comments=15)
+
+    Render last comments of the site.
+
+    :param max_comments: Maximum number of last comments to show (defaults to 15).
+
+Example usage::
+
+    {% import "flask_discussion/remark42.html" as remark42 %}
+
+    <html>
+        <body>
+            {{ remark42.render_last_comments() }}
+        </body>
+    </html>
+
+
+.. function:: remark42.render_comment_count(url)
+
+    Render Remark42 comment count widget.
+
+    :param url: URL of the page
+
+Example usage::
+
+    {% import "flask_discussion/remark42.html" as remark42 %}
+
+    <html>
+        <body>
+            {{ remark42.render_comment_count("http://my-page.com") }}
+        </body>
+    </html>

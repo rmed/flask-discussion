@@ -24,3 +24,4 @@ systems:
 
    configs/disqus
    configs/isso
+   configs/remark42
