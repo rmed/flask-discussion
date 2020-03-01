@@ -15,6 +15,7 @@ value of the ``DISCUSSION_SYSTEM`` key to one of the supported systems:
 
 - ``"disqus"``
 - ``"isso"``
+- ``"remark42"``
 
 Below is a list of specific configuration keys for all supported comment
 systems:

@@ -65,7 +65,7 @@ SOFTWARE.
 
 
 {# Render last comments of Remark42 #}
-{% macro.render_last_comments(max_comments=15) -%}
+{% macro render_last_comments(max_comments=15) -%}
 {% if config.DISCUSSION_REMARK_URL %}
     <div class="remark42__last-comments" data-max="{{ max_comments }}"></div>
 
@@ -92,7 +92,7 @@ SOFTWARE.
 
 
 {# Render comment counter of Remark42 #}
-{% macro.render_comment_count(url) -%}
+{% macro render_comment_count(url) -%}
 {% if config.DISCUSSION_REMARK_URL %}
     <div class="remark42__counter" data-url="{{ url }}"></div>
 
